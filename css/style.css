@@ -1,0 +1,214 @@
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #1D1D1D;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: OpenSans-CondensedBold, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, .button {
+  margin-bottom: 30px;
+}
+
+nav {
+  background: #FFFFFF;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.50);
+  padding: 30px;
+}
+
+ul {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: inline-block;
+  padding-right: 30px;
+}
+
+nav ul {
+  margin-left: 8.33%;
+}
+
+nav img {
+  display: inline;
+  width: 14.33%;
+  float: left;
+  margin-top: -20px;
+}
+
+nav .action-button {
+  float: right;
+  margin-right: 40px;
+  margin-top: -10px;
+}
+
+.action-button {
+  display: block;
+  background: #8EAC7B;
+  box-shadow: 0 0 15px 1px rgba(45,45,45,0.25);
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 25px;
+}
+
+a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #979797;
+  text-decoration: none;
+}
+
+.hero {
+  background: #395129 url('../images/jungle-bg.png') no-repeat;
+  height: 880px;
+  padding-top: 90px;
+}
+
+.hero-image {
+  width: 41.65%;
+  float: left;
+}
+
+.hero-content {
+  width: 41.65%;
+  float: left;
+  margin-left: 8.33%;
+  margin-top: 200px;
+}
+
+.hero p {
+  color: #FFFFFF;
+}
+
+.hero .action-button {
+  background: #FFFFFF;
+  box-shadow: 0 0 20px 0 rgba(42,42,42,0.30);
+  color: #1D1D1D;
+  width: 16.66%;
+  padding: 20px 25px;
+}
+
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 50px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+p.availability-text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  background: #EDE7CE;
+  display: inline-block;
+  padding: 5px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  clear: both;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pre-order-section {
+  background: #F9F9F9;
+  padding: 1px;
+  padding-bottom: 15px;
+}
+
+.pre-order-section h2 {
+  margin-bottom: 15px;
+}
+
+.pre-order-section ul li {
+  width: 8.33%;
+  padding-right: 20px;
+}
+
+.about-section {
+  background: #395129 url('../images/fire.png') no-repeat;
+  background-size: cover;
+}
+
+.about-content {
+  margin-left: 41.65%;
+  width: 41.65%;
+  padding: 90px 4%;
+  background: #F9F9F9;
+}
+
+.testimonials {
+  background: #F5EDE1;
+  color: #FFFFFF;
+  padding: 90px 40px 0 40px;
+}
+
+.testimonials p {
+  width: 49.98%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonial {
+  font-family: Raleway-SemiBoldItalic;
+  font-size: 18px;
+  color: #979797;
+}
+
+.testimonial span {
+  font-size: 25px;
+}
+
+.reviewer {
+  font-family: OpenSans-Light;
+  font-size: 15px;
+  color: #000000;
+}
+
+.author-section {
+  background: #395129 url('../images/desert.png') no-repeat;
+  background-size: cover;
+  padding-top: 120px;
+}
+
+.author-content {
+  background: rgba(249,249,249,0.80);
+  border: 1px solid #979797;
+  padding: 30px;
+  height: 430px;
+}
+
+.author-image {
+  width: 33.32%;
+  float: left;
+}
+
+.author-text {
+  margin-left: 41.65%;
+  width: 49.98%;
+}
