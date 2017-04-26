@@ -212,3 +212,32 @@ main {
   margin-left: 41.65%;
   width: 49.98%;
 }
+
+.news-section {
+  background: #395129 url('../images/recent-news-bg.png') no-repeat;
+  background-size: cover;
+}
+
+.news-content {
+  margin-left: 8.33%;
+  width: 41.65%;
+  padding: 90px 4%;
+  background: #F9F9F9;
+}
+
+.news-item-container {
+  clear: both;
+  margin-bottom: 75px;
+}
+
+.news-item-container p > a {
+  font-family: OpenSans-Bold;
+  font-size: 16px;
+  color: #375028;
+  margin-left: 30px;
+  float: none;
+}
+
+.news-item-container a {
+  float: right;
+}
