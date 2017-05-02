@@ -17,6 +17,10 @@ h1, h2, h3, h4, h5, h6, p, .button {
   margin-bottom: 30px;
 }
 
+section {
+  padding: 0 30px;
+}
+
 nav {
   background: #FFFFFF;
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.50);
@@ -32,24 +36,48 @@ ul {
 
 ul li {
   display: inline-block;
-  padding-right: 30px;
+  padding-right: 20px;
+}
+
+ul li:last-child {
+  padding-right: 0;
 }
 
 nav ul {
-  margin-left: 8.33%;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 nav img {
   display: inline;
-  width: 14.33%;
-  float: left;
-  margin-top: -20px;
+  width: 66.64%;
+  text-align: center;
+  margin: 0 16.66%;
 }
 
-nav .action-button {
-  float: right;
-  margin-right: 40px;
-  margin-top: -10px;
+@media (min-width: 768px) {
+  nav ul {
+    margin-left: 8.33%;
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  ul li {
+    padding-right: 30px;
+  }
+
+  nav img {
+    width: 14.33%;
+    float: left;
+    margin: -5px 0 0;
+    max-width: 100px;
+  }
+
+  nav .action-button {
+    float: right;
+    margin-top: -10px;
+  }
 }
 
 .action-button {
@@ -76,8 +104,9 @@ a {
 
 .hero {
   background: #395129 url('../images/jungle-bg.png') no-repeat;
-  height: 880px;
-  padding-top: 90px;
+  background-size: cover;
+  height: 375px;
+  padding: 60px 30px;
 }
 
 .hero-image {
@@ -86,10 +115,10 @@ a {
 }
 
 .hero-content {
-  width: 41.65%;
+  width: 49.98%;
   float: left;
   margin-left: 8.33%;
-  margin-top: 200px;
+  margin-top: 10px;
 }
 
 .hero p {
@@ -100,15 +129,52 @@ a {
   background: #FFFFFF;
   box-shadow: 0 0 20px 0 rgba(42,42,42,0.30);
   color: #1D1D1D;
-  width: 16.66%;
   padding: 20px 25px;
+}
+
+.hero-mobile-content {
+  width: 100%;
+  text-align: center;
+  clear:both;
 }
 
 h1 {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 50px;
+  font-size: 30px;
+  line-height: 34px;
   color: #FFFFFF;
   text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .hide-on-small {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-on-large {
+    display: none;
+  }
+
+  .hero {
+    height: 690px;
+    padding: 90px 30px;
+  }
+
+  .hero-content {
+    width: 41.65%;
+    margin-top: 200px;
+  }
+
+  .hero .action-button {
+    width: 24.99%;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 56px;
+  }
 }
 
 p.availability-text {
@@ -146,8 +212,18 @@ main {
 }
 
 .pre-order-section ul li {
-  width: 8.33%;
+  width: 16.66%;
   padding-right: 20px;
+}
+
+.pre-order-section ul li:last-child {
+  padding-right: 0;
+}
+
+@media (min-width: 768px) {
+  .pre-order-section ul li {
+    width: 8.33%;
+  }
 }
 
 .about-section {
@@ -156,10 +232,21 @@ main {
 }
 
 .about-content {
-  margin-left: 41.65%;
-  width: 41.65%;
-  padding: 90px 4%;
+  padding: 30px;
   background: #F9F9F9;
+}
+
+.sneak-peek-link {
+  display: block;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    margin-left: 41.65%;
+    width: 41.65%;
+    padding: 90px 4%;
+  }
 }
 
 .testimonials {
@@ -169,7 +256,6 @@ main {
 }
 
 .testimonials p {
-  width: 49.98%;
   margin: 0 auto;
   text-align: center;
 }
@@ -184,6 +270,12 @@ main {
   font-size: 25px;
 }
 
+@media (min-width: 768px) {
+  .testimonials p {
+    width: 49.98%;
+  }  
+}
+
 .reviewer {
   font-family: OpenSans-Light;
   font-size: 15px;
@@ -193,24 +285,40 @@ main {
 .author-section {
   background: #395129 url('../images/desert.png') no-repeat;
   background-size: cover;
-  padding-top: 120px;
+  padding: 120px 0 0;
 }
 
 .author-content {
   background: rgba(249,249,249,0.80);
   border: 1px solid #979797;
   padding: 30px;
-  height: 430px;
+  margin-top: 120px;
 }
 
 .author-image {
-  width: 33.32%;
   float: left;
+  margin-bottom: 30px;
 }
 
-.author-text {
-  margin-left: 41.65%;
-  width: 49.98%;
+.author-text p {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .author-image {
+    width: 33.32%;
+    margin-bottom: 0;
+  }
+
+  .author-content {
+    margin-top: 0;
+    height: 430px;
+  }
+
+  .author-text {
+    margin-left: 41.65%;
+    width: 49.98%;
+  }
 }
 
 .news-section {
@@ -219,9 +327,7 @@ main {
 }
 
 .news-content {
-  margin-left: 8.33%;
-  width: 41.65%;
-  padding: 90px 4%;
+  padding: 30px;
   background: #F9F9F9;
 }
 
@@ -234,10 +340,27 @@ main {
   font-family: OpenSans-Bold;
   font-size: 16px;
   color: #375028;
-  margin-left: 30px;
+  margin-left: 15px;
   float: none;
 }
 
 .news-item-container a {
   float: right;
+}
+
+@media (min-width: 768px) {
+  .news-content {
+    margin-left: 8.33%;
+    width: 41.65%;
+    padding: 90px 4%;
+  }
+
+  .news-item-container p > a {
+    margin-left: 30px;
+  }
+}
+
+i.fa {
+  font-size: 30px;
+  color: #385029;
 }
