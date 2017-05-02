@@ -102,6 +102,7 @@ a {
   text-decoration: none;
 }
 
+/* Start Hero CSS */
 .hero {
   background: #395129 url('../images/jungle-bg.png') no-repeat;
   background-size: cover;
@@ -187,6 +188,7 @@ p.availability-text {
   color: #000000;
   margin-bottom: 5px;
 }
+/* End Hero CSS */
 
 img {
   width: 100%;
@@ -249,6 +251,7 @@ main {
   }
 }
 
+/* Start Testimonial CSS */
 .testimonials {
   background: #F5EDE1;
   color: #FFFFFF;
@@ -282,6 +285,9 @@ main {
   color: #000000;
 }
 
+/* End Testimonial CSS */
+
+/* Start Author CSS */
 .author-section {
   background: #395129 url('../images/desert.png') no-repeat;
   background-size: cover;
@@ -320,6 +326,7 @@ main {
     width: 49.98%;
   }
 }
+/* End Author CSS */
 
 .news-section {
   background: #395129 url('../images/recent-news-bg.png') no-repeat;
