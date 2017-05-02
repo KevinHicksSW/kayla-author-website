@@ -245,9 +245,16 @@ main {
 
 @media (min-width: 768px) {
   .about-content {
+    margin-left: 33.32%;
+    width: 49.98%;
+    padding: 90px 4%;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-content {
     margin-left: 41.65%;
     width: 41.65%;
-    padding: 90px 4%;
   }
 }
 
@@ -358,8 +365,14 @@ main {
 @media (min-width: 768px) {
   .news-content {
     margin-left: 8.33%;
-    width: 41.65%;
+    width: 49.98%;
     padding: 90px 4%;
+  }
+}
+
+@media (min-width: 992px) {
+  .news-content {
+    width: 41.65%;
   }
 
   .news-item-container p > a {
