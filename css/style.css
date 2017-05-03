@@ -21,6 +21,11 @@ section {
   padding: 0 30px;
 }
 
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 nav {
   background: #FFFFFF;
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.50);
@@ -246,7 +251,7 @@ main {
 
 @media (min-width: 768px) {
   .about-content {
-    margin-left: 33.32%;
+    margin-left: 41.65%;
     width: 49.98%;
     padding: 90px 4%;
   }
@@ -254,7 +259,7 @@ main {
 
 @media (min-width: 992px) {
   .about-content {
-    margin-left: 41.65%;
+    margin-left: 49.98%;
     width: 41.65%;
   }
 }
@@ -365,7 +370,6 @@ main {
 
 @media (min-width: 768px) {
   .news-content {
-    margin-left: 8.33%;
     width: 49.98%;
     padding: 90px 4%;
   }
