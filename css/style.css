@@ -49,7 +49,7 @@ nav ul {
   margin-bottom: 15px;
 }
 
-nav img {
+nav img, footer img {
   display: inline;
   width: 66.64%;
   text-align: center;
@@ -92,6 +92,7 @@ nav img {
   text-decoration: none;
   font-size: 16px;
   padding: 10px 25px;
+  border: none;
 }
 
 a {
@@ -383,4 +384,61 @@ main {
 i.fa {
   font-size: 30px;
   color: #385029;
+}
+
+footer {
+  padding: 30px;
+}
+
+footer .action-button {
+  width: 100%;
+}
+
+.right {
+  width: 100%;
+}
+
+label, input {
+  display: block;
+}
+
+input {
+  background: #F9F9F9;
+  border: 1px solid #979797;
+  font-family: Raleway-Light;
+  font-size: 16px;
+  color: #1D1D1D;
+  padding: 10px 25px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .left {
+    width: 41.65%;
+    float: left;
+  }
+
+  .right {
+    margin-left: 49.98%;
+    width: 49.98%;
+    margin-top: 75px;
+  }
+
+  .right input {
+    display: inline;
+    width: 58.31%;
+  }
+
+  .right .action-button {
+    display: inline-block;
+    width: 33.66%;
+  }
+
+  footer img {
+    margin: 0;
+    width: 49.98%;
+    max-width: 150px;
+  }
 }
