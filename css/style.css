@@ -54,7 +54,7 @@ nav ul {
   margin-bottom: 15px;
 }
 
-nav img, footer img {
+nav img {
   display: inline;
   width: 66.64%;
   text-align: center;
@@ -392,6 +392,12 @@ i.fa {
 
 footer {
   padding: 30px;
+  text-align: center;
+}
+
+footer p, footer i, footer img {
+  margin-bottom: 15px;
+  margin-top: 0;
 }
 
 footer .action-button {
@@ -418,16 +424,28 @@ input {
   width: 100%;
 }
 
+.left {
+  margin-bottom: 15px;
+}
+
 @media (min-width: 768px) {
   .left {
-    width: 41.65%;
+    width: 49.98%;
+    display: inline-block;
     float: left;
   }
 
-  .right {
-    margin-left: 49.98%;
+  footer {
+    text-align: left;
+  }
+
+  footer .logo {
     width: 49.98%;
-    margin-top: 75px;
+  }
+
+  .right {
+    width: 49.98%;
+    display: inline-block;
   }
 
   .right input {
@@ -438,11 +456,5 @@ input {
   .right .action-button {
     display: inline-block;
     width: 33.66%;
-  }
-
-  footer img {
-    margin: 0;
-    width: 49.98%;
-    max-width: 150px;
   }
 }
