@@ -326,18 +326,22 @@ main {
 
 @media (min-width: 768px) {
   .author-image {
-    width: 33.32%;
+    width: 41.65%;
     margin-bottom: 0;
-  }
-
-  .author-content {
-    margin-top: 0;
-    height: 430px;
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
   }
 
   .author-text {
-    margin-left: 41.65%;
-    width: 49.98%;
+    margin-left: 8.33%;
+    width: 41.65%;
+    display:inline-block;
+    vertical-align: middle;
+  }
+
+  .author-content {
+    padding: 90px;
   }
 }
 /* End Author CSS */
