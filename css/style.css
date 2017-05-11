@@ -21,6 +21,11 @@ section {
   padding: 0 30px;
 }
 
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 nav {
   background: #FFFFFF;
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.50);
@@ -92,6 +97,7 @@ nav img {
   text-decoration: none;
   font-size: 16px;
   padding: 10px 25px;
+  border: none;
 }
 
 a {
@@ -106,20 +112,7 @@ a {
 .hero {
   background: #395129 url('../images/jungle-bg.png') no-repeat;
   background-size: cover;
-  height: 375px;
   padding: 60px 30px;
-}
-
-.hero-image {
-  width: 41.65%;
-  float: left;
-}
-
-.hero-content {
-  width: 49.98%;
-  float: left;
-  margin-left: 8.33%;
-  margin-top: 10px;
 }
 
 .hero p {
@@ -135,8 +128,6 @@ a {
 
 .hero-mobile-content {
   width: 100%;
-  text-align: center;
-  clear:both;
 }
 
 h1 {
@@ -147,35 +138,8 @@ h1 {
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
-  .hide-on-small {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .hide-on-large {
-    display: none;
-  }
-
-  .hero {
-    height: 690px;
-    padding: 90px 30px;
-  }
-
-  .hero-content {
-    width: 41.65%;
-    margin-top: 200px;
-  }
-
-  .hero .action-button {
-    width: 24.99%;
-  }
-
-  h1 {
-    font-size: 50px;
-    line-height: 56px;
-  }
+.hero-image {
+  margin-bottom: 30px;
 }
 
 p.availability-text {
@@ -187,6 +151,49 @@ p.availability-text {
   padding: 5px;
   color: #000000;
   margin-bottom: 5px;
+}
+
+@media (max-width: 767px) {
+  .hide-on-small {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-on-large {
+    display: none;
+  }
+
+  .hero {
+    padding: 90px 30px;
+  }
+
+  .hero-content {
+    width: 49.98%;
+    display: inline-block;
+    margin-left: 8.33%;
+    vertical-align: middle;
+  }
+
+  .hero .action-button {
+    width: 24.99%;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 56px;
+  }
+
+  .hero-image {
+    width: 33.64%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+  }
+
+  p.availability-text {
+    margin-top: 0;
+  }
 }
 /* End Hero CSS */
 
@@ -246,14 +253,21 @@ main {
 @media (min-width: 768px) {
   .about-content {
     margin-left: 41.65%;
-    width: 41.65%;
+    width: 49.98%;
     padding: 90px 4%;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-content {
+    margin-left: 49.98%;
+    width: 41.65%;
   }
 }
 
 /* Start Testimonial CSS */
 .testimonials {
-  background: #F5EDE1;
+  background: #f6f0e5;
   color: #FFFFFF;
   padding: 90px 40px 0 40px;
 }
@@ -357,9 +371,14 @@ main {
 
 @media (min-width: 768px) {
   .news-content {
-    margin-left: 8.33%;
-    width: 41.65%;
+    width: 49.98%;
     padding: 90px 4%;
+  }
+}
+
+@media (min-width: 992px) {
+  .news-content {
+    width: 41.65%;
   }
 
   .news-item-container p > a {
@@ -370,4 +389,77 @@ main {
 i.fa {
   font-size: 30px;
   color: #385029;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+}
+
+footer p, footer i, footer img {
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+footer img {
+  width: 66.64%;
+}
+
+footer .action-button {
+  width: 100%;
+}
+
+.right {
+  width: 100%;
+}
+
+label, input {
+  display: block;
+}
+
+input {
+  background: #F9F9F9;
+  border: 1px solid #979797;
+  font-family: Raleway-Light;
+  font-size: 16px;
+  color: #1D1D1D;
+  padding: 10px 25px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.left {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .left {
+    width: 49.98%;
+    display: inline-block;
+    float: left;
+  }
+
+  footer {
+    text-align: left;
+  }
+
+  footer .logo {
+    width: 49.98%;
+  }
+
+  .right {
+    width: 49.98%;
+    display: inline-block;
+  }
+
+  .right input {
+    display: inline;
+    width: 58.31%;
+  }
+
+  .right .action-button {
+    display: inline-block;
+    width: 33.66%;
+  }
 }
