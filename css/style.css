@@ -439,9 +439,13 @@ input {
 
 @media (min-width: 768px) {
   .left {
-    width: 49.98%;
+    width: 41.65%;
     display: inline-block;
-    float: left;
+    margin-bottom: 0;
+  }
+
+  .left ul {
+    margin-top: 5px;
   }
 
   footer {
@@ -454,7 +458,9 @@ input {
 
   .right {
     width: 49.98%;
+    margin-left: 8.33%;
     display: inline-block;
+    float: right;
   }
 
   .right input {
@@ -465,5 +471,15 @@ input {
   .right .action-button {
     display: inline-block;
     width: 33.66%;
+  }
+
+  footer img {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .right p {
+    margin-bottom: 30px;
   }
 }
