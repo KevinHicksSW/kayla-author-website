@@ -112,20 +112,7 @@ a {
 .hero {
   background: #395129 url('../images/jungle-bg.png') no-repeat;
   background-size: cover;
-  height: 375px;
   padding: 60px 30px;
-}
-
-.hero-image {
-  width: 41.65%;
-  float: left;
-}
-
-.hero-content {
-  width: 49.98%;
-  float: left;
-  margin-left: 8.33%;
-  margin-top: 10px;
 }
 
 .hero p {
@@ -141,8 +128,6 @@ a {
 
 .hero-mobile-content {
   width: 100%;
-  text-align: center;
-  clear:both;
 }
 
 h1 {
@@ -153,35 +138,8 @@ h1 {
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
-  .hide-on-small {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .hide-on-large {
-    display: none;
-  }
-
-  .hero {
-    height: 690px;
-    padding: 90px 30px;
-  }
-
-  .hero-content {
-    width: 41.65%;
-    margin-top: 200px;
-  }
-
-  .hero .action-button {
-    width: 24.99%;
-  }
-
-  h1 {
-    font-size: 50px;
-    line-height: 56px;
-  }
+.hero-image {
+  margin-bottom: 30px;
 }
 
 p.availability-text {
@@ -193,6 +151,49 @@ p.availability-text {
   padding: 5px;
   color: #000000;
   margin-bottom: 5px;
+}
+
+@media (max-width: 767px) {
+  .hide-on-small {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-on-large {
+    display: none;
+  }
+
+  .hero {
+    padding: 90px 30px;
+  }
+
+  .hero-content {
+    width: 49.98%;
+    display: inline-block;
+    margin-left: 8.33%;
+    vertical-align: middle;
+  }
+
+  .hero .action-button {
+    width: 24.99%;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 56px;
+  }
+
+  .hero-image {
+    width: 33.64%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+  }
+
+  p.availability-text {
+    margin-top: 0;
+  }
 }
 /* End Hero CSS */
 
@@ -266,7 +267,7 @@ main {
 
 /* Start Testimonial CSS */
 .testimonials {
-  background: #F5EDE1;
+  background: #f6f0e5;
   color: #FFFFFF;
   padding: 90px 40px 0 40px;
 }
@@ -398,6 +399,10 @@ footer {
 footer p, footer i, footer img {
   margin-bottom: 15px;
   margin-top: 0;
+}
+
+footer img {
+  width: 66.64%;
 }
 
 footer .action-button {
