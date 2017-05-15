@@ -272,6 +272,17 @@ main {
   padding: 90px 40px 0 40px;
 }
 
+.testimonial-container.animated {
+  animation-duration: 2s;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.testimonial-container.animated:not(:first-child) {
+  opacity: 0;
+}
+
 .testimonials p {
   margin: 0 auto;
   text-align: center;
