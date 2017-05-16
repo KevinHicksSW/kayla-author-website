@@ -100,12 +100,21 @@ nav img {
   border: none;
 }
 
+.action-button:hover {
+  background: #748c64;
+  color: #FFFFFF;
+}
+
 a {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 16px;
   color: #979797;
   text-decoration: none;
+}
+
+a:hover {
+  color: #6d6b6b;
 }
 
 /* Start Hero CSS */
@@ -126,6 +135,11 @@ a {
   padding: 20px 25px;
   z-index: 1000;
   position: relative;
+}
+
+.hero .action-button:hover {
+  background: #EDEDED;
+  color: #1D1D1D;
 }
 
 .hero-mobile-content {
@@ -402,6 +416,10 @@ ul.pre-order li:last-child {
   float: right;
 }
 
+.news-item-container p > a:hover {
+  color: #1c2814;
+}
+
 @media (min-width: 768px) {
   .news-content {
     width: 49.98%;
@@ -419,9 +437,16 @@ ul.pre-order li:last-child {
   }
 }
 
-i.fa {
+a.social-icon {
+  color: #385029;;
+}
+
+a.social-icon i.fa {
   font-size: 30px;
-  color: #385029;
+}
+
+a.social-icon:hover  {
+  color: #1c2814;
 }
 
 footer {
