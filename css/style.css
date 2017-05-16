@@ -124,6 +124,8 @@ a {
   box-shadow: 0 0 20px 0 rgba(42,42,42,0.30);
   color: #1D1D1D;
   padding: 20px 25px;
+  z-index: 9999;
+  position: relative;
 }
 
 .hero-mobile-content {
@@ -173,6 +175,7 @@ p.availability-text {
     display: inline-block;
     margin-left: 8.33%;
     vertical-align: middle;
+    margin-top: 32px;
   }
 
   .hero .action-button {
@@ -193,6 +196,12 @@ p.availability-text {
 
   p.availability-text {
     margin-top: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-content {
+    margin-top: 43px;
   }
 }
 /* End Hero CSS */
@@ -229,10 +238,19 @@ main {
   padding-right: 0;
 }
 
-@media (min-width: 768px) {
-  .pre-order-section ul li {
-    width: 8.33%;
-  }
+ul.pre-order {
+  opacity: 0;
+  position: relative;
+  top: -43px;
+}
+
+ul.pre-order li {
+  width: 16.66%;
+  padding-right: 20px;
+}
+
+ul.pre-order li:last-child {
+  padding-right: 0;
 }
 
 .about-section {

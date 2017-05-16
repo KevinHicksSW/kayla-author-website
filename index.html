@@ -39,11 +39,23 @@
                         <p class="availability-text">Available June 1st</p>
                         <h1>Pre-Order Today</h1>
                         <p class="hide-on-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non rhoncus urna, quis aliquam est. Nunc id condimentum lorem. Sed non augue lacinia.</p>
-                        <a href="#pre-order" class="action-button hide-on-small">Find Your Copy</a>
+                        <a href="#pre-order" class="action-button hide-on-small hero-action-button">Find Your Copy</a>
+                        <ul class="pre-order animated hide-on-small">
+                            <li><a href="#"><img src="images/amazon-white.png"></a></li>
+                            <li><a href="#"><img src="images/ibooks-white.png"></a></li>
+                            <li><a href="#"><img src="images/google-play-white.png"></a></li>
+                            <li><a href="#"><img src="images/kindle-white.png"></a></li>
+                        </ul>
                     </div>
                     <div class="hero-mobile-content hide-on-large">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non rhoncus urna, quis aliquam est. Nunc id condimentum lorem. Sed non augue lacinia.</p>
-                        <a href="#pre-order" class="action-button">Find Your Copy</a>
+                        <a href="#pre-order" class="action-button hide-on-large hero-action-button">Find Your Copy</a>
+                        <ul class="pre-order animated hide-on-large">
+                            <li><a href="#"><img src="images/amazon-white.png"></a></li>
+                            <li><a href="#"><img src="images/ibooks-white.png"></a></li>
+                            <li><a href="#"><img src="images/google-play-white.png"></a></li>
+                            <li><a href="#"><img src="images/kindle-white.png"></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -171,14 +183,20 @@
                     function() {
                         var selected = $('.testimonial-container.animated.slideInLeft');
                         if ($(selected).next().length != 0) {
-                            $(selected).next().addClass('slideInLeft').removeClass('slideOutRight').css('opacity', '1');;
+                            $(selected).next().addClass('slideInLeft').removeClass('slideOutRight').css('opacity', '1');
                         } else {
-                            $(selected).parent().children().first().addClass('slideInLeft').removeClass('slideOutRight').css('opacity', '1');;
+                            $(selected).parent().children().first().addClass('slideInLeft').removeClass('slideOutRight').css('opacity', '1');
                         }
                         selected.removeClass('slideInLeft').addClass('slideOutRight');
                     },
                     5000
                 );
+            });
+
+            $('.hero-action-button').click(function(event) {
+                event.preventDefault();
+                $(this).addClass('animated fadeOut');
+                $('ul.pre-order').addClass('fadeIn');
             });
         </script>
     </body>
