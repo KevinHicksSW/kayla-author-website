@@ -25,7 +25,7 @@
                         <li><a href="#reviews">Reviews</a></li>
                         <li><a href="#updates">Updates</a></li>
                     </ul>
-                    <a class="action-button" href="#pre-order">Pre-Order</a>
+                    <a class="action-button pre-order-action-button" href="#pre-order">Pre-Order</a>
                 </div>
             </nav>
 
@@ -80,7 +80,7 @@
                     <div class="about-content">
                         <p>A fire in the middle of the night leads to Jeremy’s mother’s disappearance and the implantation of a strange device behind his ear. While seeking out the device’s origin, Jeremy discovers that there are five other cities out there that also subscribe to Kale Stone's tyrannical ideas.</p>
                         <a href="#" class="sneak-peek-link">Interested? Get an exclusive sneak peek</a>
-                        <a href="#pre-order" class="action-button">Pre-Order</a>
+                        <a href="#pre-order" class="action-button pre-order-action-button">Pre-Order</a>
                     </div>
                 </div>
             </section>
@@ -107,7 +107,7 @@
                 <div class="author-content">
                     <div class="container">
                         <div class="author-image">
-                        <img src="images/author-profile.png"/>
+                            <img src="images/author-profile.png"/>
                         </div>
                         <div class="author-text">
                             <h2>About the author</h2>
@@ -153,6 +153,39 @@
                     </div>
                 </div>
             </section>
+
+            <div id="pre-order-modal" class="modal animated">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <section class="center pre-order-section">
+                        <div class="container">
+                            <h2>Pre-order your copy now</h2>
+                            <ul>
+                                <li><a href="#"><img src="images/amazon.png"></a></li>
+                                <li><a href="#"><img src="images/ibooks.png"></a></li>
+                                <li><a href="#"><img src="images/google-play.png"></a></li>
+                                <li><a href="#"><img src="images/kindle.png"></a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div id="news-modal" class="modal animated">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <section>
+                        <div class="container">
+                            <h2>Subscribe for exclusive news</h2>
+                            <p>Receive a free chapter and other exlusive news and excerpts.</p>
+                            <form action="" method="POST">
+                                <input type="text" name="email" required placeholder="E-mail Address">
+                                <button type="submit" class="action-button">Subscribe</button>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
         </main>
 
         <footer>
@@ -177,27 +210,6 @@
             </div>
         </footer>
         <script src="javascript/jquery-2.1.3.min.js"></script>
-        <script type="text/javascript">
-            $('document').ready(function() {
-                setInterval(
-                    function() {
-                        var selected = $('.testimonial-container.animated.slideInLeft');
-                        if ($(selected).next().length != 0) {
-                            $(selected).next().addClass('slideInLeft').removeClass('slideOutRight').css('opacity', '1');
-                        } else {
-                            $(selected).parent().children().first().addClass('slideInLeft').removeClass('slideOutRight').css('opacity', '1');
-                        }
-                        selected.removeClass('slideInLeft').addClass('slideOutRight');
-                    },
-                    5000
-                );
-            });
-
-            $('.hero-action-button').click(function(event) {
-                event.preventDefault();
-                $(this).addClass('animated fadeOut');
-                $('ul.pre-order').addClass('fadeIn');
-            });
-        </script>
+        <script src="javascript/main.js"></script>
     </body>
 </html>
