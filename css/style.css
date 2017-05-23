@@ -1,5 +1,6 @@
 html, body {
   overflow-x: hidden;
+  min-height: 100%; 
 }
 
 body {
@@ -7,6 +8,8 @@ body {
   color: #1D1D1D;
   font-size: 16px;
   line-height: 22px;
+  overflow: hidden;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -309,6 +312,7 @@ ul.pre-order li:last-child {
   position: absolute;
   left: 0;
   right: 0;
+  padding: 0 30px;
 }
 
 .testimonial-container.animated:not(:first-child) {
@@ -481,7 +485,7 @@ input {
   font-family: Raleway-Light;
   font-size: 16px;
   color: #1D1D1D;
-  padding: 10px 25px;
+  padding: 10px 15px;
   margin-bottom: 30px;
   box-sizing: border-box;
   width: 100%;
@@ -538,33 +542,42 @@ input {
   }
 }
 
+/* The Modal (background) */
 .modal {
-    display: none;
-    opacity: 0;
-    position: fixed;
-    z-index: 9999;
-    left: 0;
+    visibility: hidden; /* Hidden by default */
+    position: absolute;
     top: 0;
-    width: 100%; 
+    left: 0;
+    width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4);
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
-/* Modal Content */
+/* Modal Content/Box */
 .modal-content {
-    background-color: #F9F9F9;
-    color: #1D1D1D;
-    margin: auto;
-    padding: 30px;
+    background-color: #fefefe;
+    margin: 0 auto; /* 15% from the top and centered */
+    padding: 20px;
     border: 1px solid #888;
-    width: 83.3%;
+    width: 66.64%;
     position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .modal-content .container {
-  padding: 90px 0;
+  padding: 30px 0px
+}
+
+.modal-content .pre-order-section .container
+{
+  margin-top: 15px;
 }
 
 .modal-content .pre-order-section .container h2 {
@@ -576,13 +589,11 @@ input {
   margin-bottom: 15px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) {  
   .modal-content {
-    padding: 90px 30px;
+    padding: 0 30px;
     width: 49.98%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    max-height: 350px;
   }
 
   .modal-content .pre-order-section .container ul li {
@@ -596,6 +607,7 @@ input {
     float: right;
     font-size: 32px;
     font-weight: bold;
+    padding-top: 15px;
 }
 
 .close:hover,

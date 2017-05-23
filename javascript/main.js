@@ -20,25 +20,25 @@ $('document').ready(function() {
 
     $('.pre-order-action-button').click(function(event) {
         event.preventDefault();
-        $('#pre-order-modal').css('display', 'block');
+        $('#pre-order-modal').css('visibility', 'visible');
         $('#pre-order-modal').removeClass('fadeOut').addClass('fadeIn');
     });
 
     $('.sneak-peek-link').click(function(event) {
         event.preventDefault();
-        $('#news-modal').css('display', 'block');
+        $('#news-modal').css('visibility', 'visible');
         $('#news-modal').removeClass('fadeOut').addClass('fadeIn');
     });
 
     $(window).click(function(event) {
         if ($(event.target).hasClass('modal')) {
             $('.modal').removeClass('fadeIn').addClass('fadeOut');
-            setTimeout(function() { $('.modal').css('display', 'none'); }, 1000);
+            setTimeout(function() { $('.modal').css('visibility', 'hidden'); }, 750);
         }
     });
 
     $('.close').click(function(event) {
         $('.modal').removeClass('fadeIn').addClass('fadeOut');
-        setTimeout(function() { $('.modal').css('display', 'none'); }, 1000);
+        setTimeout(function() { $('.modal').css('visibility', 'hidden'); }, 750);
     });
 });
